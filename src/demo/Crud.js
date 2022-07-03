@@ -16,9 +16,9 @@ const Crud = ()=> {
   //     .then(items => this.setState({items}))
   //     .catch(err => console.log(err))
   // }
-  setItems([])
+
   const addItemToState = (item) => {
-    this.setState(prevState => ({
+    setItems(prevState => ({
       items: [...prevState.items, item]
     }))
   }
